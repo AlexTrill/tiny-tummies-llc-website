@@ -1,0 +1,16 @@
+.form-group {
+    color: #777777;
+     font-family: Georgia, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+textarea, input {
+    background-color: #77777707;
+}
+.help-block {
+    color: red;
+}
+.container{
+padding:50px; 
+}
+

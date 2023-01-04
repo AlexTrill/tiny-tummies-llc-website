@@ -1,0 +1,43 @@
+<div class="bg-img">
+  <div class="site-header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light px-5">
+        <a class="navbar-brand" href="#"> <h1>Tiny Tummies Nutrition</h1></a>
+        <button
+          (click)="toggleNavbar()"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+          [ngClass]="{ show: navbarOpen }"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link active"
+              routerLinkActive="active"
+              routerLink="/home"
+              >Home</a
+            >
+            <a class="nav-link" routerLinkActive="active" routerLink="/team">Our Team</a>
+
+            <a class="nav-link" href="#">Services</a>
+
+            <a class="nav-link" routerLinkActive="active" routerLink="/contact"
+              >Contact</a
+            >
+            <a class="nav-link" href="#">Resources</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

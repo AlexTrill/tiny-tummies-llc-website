@@ -1,0 +1,88 @@
+<html>
+  
+  <div class="container">
+    <div class="row">
+    <div class="col-12">
+      <form
+        ngNoForm
+        action="https://mailthis.to/alextrill"
+        method="POST"
+        encType="multipart/form-data"
+        onsubmit="this.reset();"
+      >
+        <div class="form-group" >
+          <label for="name">Your Name* </label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            ngModel
+            #name="ngModel"
+            class="form-control"
+          />
+          <span class="help-block" *ngIf="name.touched && name.value===''"
+          >Please enter a name!
+        </span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail Address*</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            email
+            ngModel
+            #email="ngModel"
+            class="form-control"
+          />
+          <span class="help-block" *ngIf="!email.valid && email.touched"
+            >Please enter a valid e-mail!
+          </span>
+          <span class="help-block" *ngIf="email.value ==='' && email.touched"
+            >Please enter a valid e-mail!
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone*</label>
+          <input type="text"  maxlength="12" name="phone" class="form-control"  ngModel 
+          #phone="ngModel"/>
+          <span class="help-block" *ngIf="phone.touched && phone.value===''"
+          >Please enter a valid phone number!
+        </span>
+    </div>  
+   
+
+        <div class="form-group">
+          <label for="message">Tell us more about how we can help you</label>
+          <br />
+          <textarea name="message" rows="10" class="form-control"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <re-captcha
+            name="recaptcha"
+            (resolved)="resolved($event)"
+            siteKey="6LcKHy0jAAAAAIrR1TCo90UVGVDpE3wlIN5rJBWM"
+            onclick="enableBtn()"
+          ></re-captcha>
+        </div>
+        <div class="form-group">
+          <button
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="
+          !email.valid || email.value === '' || name.value === '' || !enabled || phone.value==='' 
+          "
+          >
+          Submit
+        </button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+

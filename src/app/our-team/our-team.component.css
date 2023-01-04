@@ -1,0 +1,22 @@
+#box1{
+    background-color: aqua;
+}
+
+.card{
+    border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(222, 184, 124, 0.387);
+  padding: 75px;
+  /* margin: 20px; */
+    text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.box{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(222, 184, 124, 0.387);
+  padding: 50px;
+  /* margin: 20px; */
+    text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

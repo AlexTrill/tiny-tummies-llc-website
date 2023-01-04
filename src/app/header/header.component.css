@@ -1,0 +1,63 @@
+* {
+    font-family: 'Comfertaa' !important;
+}
+@font-face {
+    font-family: 'Comfertaa';
+    src: url('src\assets\fonts\Comfortaa\static\Comfortaa-Bold.ttf');
+}
+.navbar{
+    height: 150px;
+}
+
+.site-header {
+     background-color: rgb(246, 245, 245); 
+    
+    }
+   
+.nav-link {
+
+    
+}
+
+.active{
+    text-decoration: underline;
+    background-color: rgb(226, 226, 181);
+}
+.nav-img{
+    padding-right: 3%;
+}
+
+
+
+.bg-img {
+  
+  
+    min-height: 90px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container-fluid {
+    position: absolute;
+  }
+  
+  /* The navbar */
+  
+  
+  /* Navbar links */
+  
+  h1 {
+    position: relative;
+     left: 20%;
+    font-weight: 900;
+    background-color: rgba(249, 249, 249, 0.571);
+    width: auto;
+    color: rgb(75, 75, 75);
+  }
