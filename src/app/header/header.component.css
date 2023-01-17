@@ -1,9 +1,12 @@
-* {
-    font-family: 'Comfertaa' !important;
+h1 {
+    font-family: 'LioJuanMaiCao' !important;
+    font-size: 50px;
 }
 @font-face {
-    font-family: 'Comfertaa';
-    src: url('src\assets\fonts\Comfortaa\static\Comfortaa-Bold.ttf');
+    /* font-family: 'Comfertaa';
+    src: url('src\assets\fonts\Comfortaa\static\Comfortaa-Bold.ttf'); */
+    font-family: 'LioJuanMaiCao';
+    src: url('src\assets\fonts\LioJianMaiCao\LiuJianMaoCao-Regular.ttf');
 }
 .navbar{
     height: 150px;
