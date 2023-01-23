@@ -56,11 +56,11 @@ h1 {
   
   /* Navbar links */
   
-  h1 {
-    position: relative;
-     left: 20%;
+  .navbar-brand {
+     padding-left: 20%;
     font-weight: 900;
     background-color: rgba(249, 249, 249, 0.571);
-    width: auto;
     color: rgb(75, 75, 75);
+    font-family: 'LioJuanMaiCao' !important;
+    font-size: 55px;
   }
