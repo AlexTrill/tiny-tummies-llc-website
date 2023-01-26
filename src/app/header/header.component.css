@@ -9,11 +9,10 @@ h1 {
     src: url('src\assets\fonts\LioJianMaiCao\LiuJianMaoCao-Regular.ttf');
 }
 .navbar{
-    height: 150px;
+    height: 85px;
 }
 
 .site-header {
-     background-color: rgb(246, 245, 245); 
     
     }
    
@@ -57,10 +56,9 @@ h1 {
   /* Navbar links */
   
   .navbar-brand {
-     padding-left: 20%;
-    font-weight: 900;
-    background-color: rgba(249, 249, 249, 0.571);
+     padding-left: 40%;
+    font-weight: 800;
     color: rgb(75, 75, 75);
     font-family: 'LioJuanMaiCao' !important;
-    font-size: 55px;
+    font-size: 45px;
   }
